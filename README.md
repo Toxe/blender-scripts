@@ -17,16 +17,16 @@ Align bone to a custom transform orientation and recalculate roll so that the bo
 - Snap (Shift-S) --> Cursor to Selected  
   ![align_bone_to_transform_orientation_03.png](images/align_bone_to_transform_orientation_03.png)
 
-- Enter armature Edit Mode.  
-  ![align_bone_to_transform_orientation_04.png](images/align_bone_to_transform_orientation_04.png)
+- Enter armature Edit Mode.
 
 - Either add a new bone or select an existing bone.  
-  ![align_bone_to_transform_orientation_05.png](images/align_bone_to_transform_orientation_05.png)
+  ![align_bone_to_transform_orientation_04.png](images/align_bone_to_transform_orientation_04.png)
 
 - F3 --> "Align Bone to Transform Orientation"  
-  ![align_bone_to_transform_orientation_06.png](images/align_bone_to_transform_orientation_06.png)
+  ![align_bone_to_transform_orientation_05.png](images/align_bone_to_transform_orientation_05.png)
 
-Now the bone sits orthogonal on the selected face and is rolled in a way that its Z axis points along the X axis of the custom transform orientation.
+- Now the bone sits orthogonal on the selected face and is rolled in a way that its Z axis points along the X axis of the custom transform orientation.  
+  ![align_bone_to_transform_orientation_06.png](images/align_bone_to_transform_orientation_06.png)
 
 
 ## Test Scripts

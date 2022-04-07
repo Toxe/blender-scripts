@@ -6,7 +6,7 @@ def main(context):
     bpy.ops.view3d.snap_selected_to_cursor(use_offset=False)
 
     # rotate bone
-    head_pos = bpy.context.active_bone.head.copy()
+    head_pos = context.active_bone.head.copy()
     bpy.ops.transform.translate(
         value=(0, 0, 1),
         orient_axis_ortho="X",
@@ -14,15 +14,15 @@ def main(context):
         orient_matrix_type="Face",
         constraint_axis=(False, False, True),
     )
-    bpy.context.active_bone.tail = bpy.context.active_bone.head.copy()
-    bpy.context.active_bone.head = head_pos
+    context.active_bone.tail = context.active_bone.head.copy()
+    context.active_bone.head = head_pos
 
     # transpose transform orientation to get global X axis vector
-    custom_orientation = bpy.context.scene.transform_orientation_slots[0].custom_orientation
+    custom_orientation = context.scene.transform_orientation_slots[0].custom_orientation
     global_x_axis_vector = custom_orientation.matrix.transposed().row[0]
 
     # move cursor +1.0 along transform orientation X axis
-    bpy.context.scene.cursor.location += 1.0 * global_x_axis_vector
+    context.scene.cursor.location += 1.0 * global_x_axis_vector
 
     # recalculate bone roll so that bone Z axis will point towards the cursor
     bpy.ops.armature.calculate_roll(type="CURSOR")

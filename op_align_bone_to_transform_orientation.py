@@ -33,6 +33,7 @@ class AlignBoneToTransformOrientationOperator(bpy.types.Operator):
 
     bl_idname = "object.align_bone_to_transform_orientation_operator"
     bl_label = "Align Bone to Transform Orientation"
+    bl_options = {"REGISTER", "UNDO"}
 
     @classmethod
     def poll(cls, context):

@@ -1,5 +1,7 @@
 # Blender Scripts
 
+Open `Python.blend` for an example Blender file that contains all scripts.
+
 ## Operators
 
 ### Align Bone to Transform Orientation
@@ -23,6 +25,7 @@ Align bone to a custom transform orientation and recalculate roll so that the bo
   ![align_bone_to_transform_orientation_04.png](images/align_bone_to_transform_orientation_04.png)
 
 - F3 --> "Align Bone to Transform Orientation"  
+  Or: Right click bone in edit mode.  
   ![align_bone_to_transform_orientation_05.png](images/align_bone_to_transform_orientation_05.png)
 
 - Now the bone sits orthogonal on the selected face and is rolled in a way that its Z axis points along the X axis of the custom transform orientation.  

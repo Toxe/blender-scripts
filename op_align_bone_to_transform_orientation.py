@@ -10,8 +10,7 @@ def main(context):
     bpy.ops.transform.translate(
         value=(0, 0, 1),
         orient_axis_ortho="X",
-        orient_type="Face",
-        orient_matrix_type="Face",
+        orient_type=context.scene.transform_orientation_slots[0].type,
         constraint_axis=(False, False, True),
     )
     context.active_bone.tail = context.active_bone.head.copy()

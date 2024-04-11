@@ -6,3 +6,17 @@ max-line-length = 120
 
 [tool.pylint.messages]
 disable = ["missing-module-docstring", "missing-function-docstring", "missing-class-docstring", "invalid-name"]
+
+[tool.poetry]
+package-mode = false
+name = "blender-scripts"
+description = "Blender Scripts"
+authors = ["Toxe <toxe@toxe.net>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

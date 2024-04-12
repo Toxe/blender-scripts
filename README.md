@@ -2,7 +2,7 @@
 
 Open `Python.blend` for an example Blender file that contains all scripts.
 
-Supported version: Blender 3.3
+Supported versions: Blender 3+ and 4+
 
 ## Operators
 
@@ -26,9 +26,9 @@ Align bone to a *Custom Transform Orientation* and recalculate roll so that the 
 
    Two options:
 
-   - Option 1: Open the command palette (Edit --> Menu Search or `F3`), type "transform create orientation" and execute the
-     "Create Orientation" command. This will create a new *Custom Transform Orientation* called "Face" (by default) but
-     *not* automatically select it.
+   - Option 1: Open the command palette (`F3` or Edit --> Menu Search), type "transform create orientation" and execute the
+     "Create Orientation" command. This will create a new *Custom Transform Orientation* called "Face" (by default).
+     (Note: Older Blender versions will *not* automatically select the transform it. See: step 5.)
 
      ![align_bone_to_transform_orientation_04a.png](images/align_bone_to_transform_orientation_04a.png)
 
@@ -55,6 +55,10 @@ Align bone to a *Custom Transform Orientation* and recalculate roll so that the 
 
 9. Open the command palette (`F3`) and type "Align Bone to Transform Orientation".  
    Or: Right click the bone in *Edit Mode* and select the same operation.
+
+   ![align_bone_to_transform_orientation_09a.png](images/align_bone_to_transform_orientation_09a.png)
+
+   ![align_bone_to_transform_orientation_09b.png](images/align_bone_to_transform_orientation_09b.png)
 
 10. Now the bone sits orthogonal on the selected face and is rolled in a way that its Z axis points along the X axis of the
     *Custom Transform Orientation*.

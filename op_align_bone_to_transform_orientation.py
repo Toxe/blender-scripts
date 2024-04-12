@@ -9,7 +9,6 @@ def main(context):
     head_pos = context.active_bone.head.copy()
     bpy.ops.transform.translate(
         value=(0, 0, 1),
-        orient_axis_ortho="X",
         orient_type=context.scene.transform_orientation_slots[0].type,
         constraint_axis=(False, False, True),
     )

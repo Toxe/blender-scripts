@@ -49,7 +49,7 @@ def menu_func(self, context):
     )
 
 
-# Register and add to the "object" menu (required to also use F3 search "Align Bone Roll" for quick access)
+# register and add to the "object" menu (required to also use F3 search "Align Bone to Transform Orientation" for quick access)
 def register():
     bpy.utils.register_class(AlignBoneToTransformOrientationOperator)
     bpy.types.VIEW3D_MT_armature_context_menu.append(menu_func)

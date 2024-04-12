@@ -16,7 +16,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
-fake-bpy-module-3-3 = "^20231118"
+fake-bpy-module-3-6 = "^20231118"
 
 [build-system]
 requires = ["poetry-core"]
